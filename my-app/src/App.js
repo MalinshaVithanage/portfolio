@@ -11,8 +11,8 @@ function App() {
 <>
 <Routes>
   <Route path="/"n element={<Home/>}/>
-  <Route path="/project"n element={<About/>}/>
-  <Route path="/about"n element={<Project/>}/>
+  <Route path="/about"n element={<About/>}/>
+  <Route path="/project"n element={<Project/>}/>
   <Route path="/contact"n element={<Contact/>}/>
   
   
