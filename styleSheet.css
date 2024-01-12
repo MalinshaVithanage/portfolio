@@ -198,6 +198,16 @@ body {
     margin-bottom: 4rem;
 
 }
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+
+}
+.sub-title span{
+    color: #0ef;
+
+}
 .container{
     padding: 90px;
 }
@@ -260,6 +270,147 @@ body {
 .services-list div:hover{
     transform: translateY(-10px);
 }
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 25px;
+    padding: 10px;
+}
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 8px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.java span{
+    width: 90%;
+}
+.progress-line.html span{
+    width: 80%;
+}
+.progress-line.css span{
+    width: 75%;
+}
+.progress-line.spingBoot span{
+    width: 70%;
+}
+.progress-line.angular span{
+    width: 70%;
+}
+.progress-line.react span{
+    width: 65%;
+}
+.progress-line.mysql span{
+    width: 80%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px ;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.java span::after{
+    content: "90%";
+}
+.progress-line.html span::after{
+    content: "80%";
+}
+.progress-line.css span::after{
+    content: "75%";
+}
+.progress-line.spingBoot span::after{
+    content: "70%";
+}
+.progress-line.angular span::after{
+    content: "70%";
+}
+.progress-line.react span::after{
+    content: "65%";
+}
+.progress-line.mysql span::after{
+    content: "80%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
 
 
 @keyframes slideRight {
