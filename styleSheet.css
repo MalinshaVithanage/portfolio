@@ -84,6 +84,7 @@ section{
     display: none;
 }
 .home {
+    
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -97,7 +98,7 @@ section{
     padding: 7rem 10% 0; */
 }
 .home-img{
-     width: 25vw;
+     width: 15vw;
 }
 /* .home-content {
     max-width: 65vw;
