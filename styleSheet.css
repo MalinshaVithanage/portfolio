@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'poppins', sans-serif;
 }
 
@@ -603,10 +604,120 @@ section{
     height: 100%;
 }
 
+.contact{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    align-items: center;
+    gap: 3rem;
+    
+    margin-top: 130px;
+}
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
 
+}
+.contact-text h2 span{
+    color: #0ef;
+}
+.contact-text h4{
+    padding-left: 25%;
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact-list{
+    align-items: center;
+    padding-left: 25%;
+    margin-bottom: 3rem;
+    font-size: 25px;
+    
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list i{
+    display: inline-block;
+    color:#0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
 
+.contact-form form{
+    /* position: absolute; */
+    padding-left: 25%;
 
+    
+}
+.contact-form form input, form textarea{
+    
+    border: none;
+    outline: none;
+    width: 70%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
 
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
+
+}
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background:rgb(7, 85, 91);
+    font-weight: 300;
+    margin-top: 70px;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+
+}
+.top i{
+    color: #000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -653,4 +764,12 @@ section{
         transform: translateY(0px);
         opacity: 1;
     }
+}
+#msg{
+padding-left: 45%;
+/* padding: 30px; */
+font-size: 25px;
+color: #61b752;
+margin-top: 20px;
+display: block;
 }
